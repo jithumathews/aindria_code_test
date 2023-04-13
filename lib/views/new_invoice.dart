@@ -140,19 +140,89 @@ class NewInvo extends StatelessWidget {
                 ),
               ],
             ),
-            Container(
-              child: Column(
-                children: [
-                  Padding(
-                    padding:
-                        const EdgeInsets.only(left: 10, right: 10, top: 10),
-                    child: GestureDetector(
-                      onTap: (){
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Approval_page()));
-                      },
+            SingleChildScrollView(
+              child: Container(
+                child: Column(
+                  children: [
+                    Padding(
+                      padding:
+                          const EdgeInsets.only(left: 10, right: 10, top: 10),
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Approval_page()));
+                        },
+                        child: Container(
+                          height: 80,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15),
+                              color: Colors.white),
+                          child: ListTile(
+                            title: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      "MyG Kakkanad",
+                                      style: TextStyle(
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    Text(
+                                      "1320",
+                                      style: TextStyle(
+                                          color: Colors.indigo,
+                                          fontWeight: FontWeight.bold),
+                                    )
+                                  ],
+                                ),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      "Invoice No : 564446456",
+                                      style: TextStyle(
+                                          color: Colors.black, fontSize: 10),
+                                    ),
+                                    Text(
+                                      "29 Dec 2023",
+                                      style: TextStyle(
+                                          color: Colors.black, fontSize: 10),
+                                    )
+                                  ],
+                                ),
+                              ],
+                            ),
+                            leading: CircleAvatar(
+                              backgroundImage: NetworkImage(
+                                  'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/MyG_LOGO.jpg/1200px-MyG_LOGO.jpg'),
+                            ),
+                            trailing: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Icon(
+                                  Icons.access_time_rounded,
+                                  color: Colors.orange,
+                                ),
+                                Text("Pending",
+                                    style: TextStyle(
+                                        color: Colors.orange, fontSize: 10))
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding:
+                          const EdgeInsets.only(left: 10, right: 10, top: 10),
                       child: Container(
                         height: 80,
                         decoration: BoxDecoration(
@@ -166,13 +236,81 @@ class NewInvo extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   Text(
-                                    "MyG Kakkanad",
+                                    "Allen Solly Idappally",
                                     style: TextStyle(
                                         color: Colors.black,
                                         fontWeight: FontWeight.bold),
                                   ),
                                   Text(
-                                    "1320",
+                                    "780",
+                                    style: TextStyle(
+                                        color: Colors.indigo,
+                                        fontWeight: FontWeight.bold),
+                                  )
+                                ],
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "Invoice No : 556989896",
+                                    style: TextStyle(
+                                        color: Colors.black, fontSize: 10),
+                                  ),
+                                  Text(
+                                    "29 Dec 2023",
+                                    style: TextStyle(
+                                        color: Colors.black, fontSize: 10),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                                'https://i.pinimg.com/originals/23/7c/9a/237c9ad63c3168c73f1f23684049a529.png'),
+                          ),
+                          trailing: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Icon(
+                                Icons.access_time_rounded,
+                                color: Colors.orange,
+                              ),
+                              Text("Pending",
+                                  style: TextStyle(
+                                      color: Colors.orange, fontSize: 10))
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding:
+                          const EdgeInsets.only(left: 10, right: 10, top: 10),
+                      child: Container(
+                        height: 80,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15),
+                            color: Colors.white),
+                        child: ListTile(
+                          title: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "Nike Idappally",
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  Text(
+                                    "2300",
                                     style: TextStyle(
                                         color: Colors.indigo,
                                         fontWeight: FontWeight.bold),
@@ -201,7 +339,143 @@ class NewInvo extends StatelessWidget {
                           ),
                           leading: CircleAvatar(
                             backgroundImage: NetworkImage(
-                                'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/MyG_LOGO.jpg/1200px-MyG_LOGO.jpg'),
+                                'https://free4kwallpapers.com/uploads/originals/2015/07/14/nike-logo-png.jpg'),
+                          ),
+                          trailing: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Icon(
+                                Icons.check_circle_outline_rounded,
+                                color: Colors.green,
+                              ),
+                              Text("Approved",
+                                  style: TextStyle(
+                                      color: Colors.green, fontSize: 10))
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding:
+                          const EdgeInsets.only(left: 10, right: 10, top: 10),
+                      child: Container(
+                        height: 80,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15),
+                            color: Colors.white),
+                        child: ListTile(
+                          title: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "Dessi Cuppa",
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  Text(
+                                    "180",
+                                    style: TextStyle(
+                                        color: Colors.indigo,
+                                        fontWeight: FontWeight.bold),
+                                  )
+                                ],
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "Invoice No : 564446456",
+                                    style: TextStyle(
+                                        color: Colors.black, fontSize: 10),
+                                  ),
+                                  Text(
+                                    "29 Dec 2023",
+                                    style: TextStyle(
+                                        color: Colors.black, fontSize: 10),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                                'https://content.jdmagicbox.com/comp/mumbai/d9/022pxx22.xx22.180209190346.l6d9/catalogue/dessi-cuppa-borivali-east-mumbai-inexpensive-restaurants-below-rs-500--pyz3q.jpg'),
+                          ),
+                          trailing: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Icon(
+                                Icons.check_circle_outline_rounded,
+                                color: Colors.green,
+                              ),
+                              Text("Approved",
+                                  style: TextStyle(
+                                      color: Colors.green, fontSize: 10))
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding:
+                          const EdgeInsets.only(left: 10, right: 10, top: 10),
+                      child: Container(
+                        height: 80,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15),
+                            color: Colors.white),
+                        child: ListTile(
+                          title: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "Zudio Kakkanad",
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  Text(
+                                    "690",
+                                    style: TextStyle(
+                                        color: Colors.indigo,
+                                        fontWeight: FontWeight.bold),
+                                  )
+                                ],
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "Invoice No : 564446456",
+                                    style: TextStyle(
+                                        color: Colors.black, fontSize: 10),
+                                  ),
+                                  Text(
+                                    "29 Dec 2023",
+                                    style: TextStyle(
+                                        color: Colors.black, fontSize: 10),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                                'https://www.mallsmarket.com/sites/default/files/styles/medium/public/images/brands/zudio-logo.jpg'),
                           ),
                           trailing: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -218,416 +492,77 @@ class NewInvo extends StatelessWidget {
                         ),
                       ),
                     ),
-                  ),
-                  Padding(
-                    padding:
-                        const EdgeInsets.only(left: 10, right: 10, top: 10),
-                    child: Container(
-                      height: 80,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
-                          color: Colors.white),
-                      child: ListTile(
-                        title: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  "Allen Solly Idappally",
+
+                    Padding(
+                      padding:
+                          const EdgeInsets.only(left: 10, right: 10, top: 10),
+                      child: Container(
+                        height: 80,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15),
+                            color: Colors.white),
+                        child: ListTile(
+                          title: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "Nike Idappally",
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  Text(
+                                    "2300",
+                                    style: TextStyle(
+                                        color: Colors.indigo,
+                                        fontWeight: FontWeight.bold),
+                                  )
+                                ],
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "Invoice No : 564446456",
+                                    style: TextStyle(
+                                        color: Colors.black, fontSize: 10),
+                                  ),
+                                  Text(
+                                    "29 Dec 2023",
+                                    style: TextStyle(
+                                        color: Colors.black, fontSize: 10),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                                'https://free4kwallpapers.com/uploads/originals/2015/07/14/nike-logo-png.jpg'),
+                          ),
+                          trailing: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Icon(
+                                Icons.check_circle_outline_rounded,
+                                color: Colors.green,
+                              ),
+                              Text("Approved",
                                   style: TextStyle(
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                                Text(
-                                  "780",
-                                  style: TextStyle(
-                                      color: Colors.indigo,
-                                      fontWeight: FontWeight.bold),
-                                )
-                              ],
-                            ),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  "Invoice No : 556989896",
-                                  style: TextStyle(
-                                      color: Colors.black, fontSize: 10),
-                                ),
-                                Text(
-                                  "29 Dec 2023",
-                                  style: TextStyle(
-                                      color: Colors.black, fontSize: 10),
-                                )
-                              ],
-                            ),
-                          ],
-                        ),
-                        leading: CircleAvatar(
-                          backgroundImage: NetworkImage(
-                              'https://i.pinimg.com/originals/23/7c/9a/237c9ad63c3168c73f1f23684049a529.png'),
-                        ),
-                        trailing: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            Icon(
-                              Icons.access_time_rounded,
-                              color: Colors.orange,
-                            ),
-                            Text("Pending",
-                                style: TextStyle(
-                                    color: Colors.orange, fontSize: 10))
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding:
-                        const EdgeInsets.only(left: 10, right: 10, top: 10),
-                    child: Container(
-                      height: 80,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
-                          color: Colors.white),
-                      child: ListTile(
-                        title: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  "Nike Idappally",
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                                Text(
-                                  "2300",
-                                  style: TextStyle(
-                                      color: Colors.indigo,
-                                      fontWeight: FontWeight.bold),
-                                )
-                              ],
-                            ),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  "Invoice No : 564446456",
-                                  style: TextStyle(
-                                      color: Colors.black, fontSize: 10),
-                                ),
-                                Text(
-                                  "29 Dec 2023",
-                                  style: TextStyle(
-                                      color: Colors.black, fontSize: 10),
-                                )
-                              ],
-                            ),
-                          ],
-                        ),
-                        leading: CircleAvatar(
-                          backgroundImage: NetworkImage(
-                              'https://free4kwallpapers.com/uploads/originals/2015/07/14/nike-logo-png.jpg'),
-                        ),
-                        trailing: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            Icon(
-                              Icons.check_circle_outline_rounded,
-                              color: Colors.green,
-                            ),
-                            Text("Approved",
-                                style: TextStyle(
-                                    color: Colors.green, fontSize: 10))
-                          ],
+                                      color: Colors.green, fontSize: 10))
+                            ],
+                          ),
                         ),
                       ),
                     ),
-                  ),
-                  Padding(
-                    padding:
-                        const EdgeInsets.only(left: 10, right: 10, top: 10),
-                    child: Container(
-                      height: 80,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
-                          color: Colors.white),
-                      child: ListTile(
-                        title: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  "Dessi Cuppa",
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                                Text(
-                                  "180",
-                                  style: TextStyle(
-                                      color: Colors.indigo,
-                                      fontWeight: FontWeight.bold),
-                                )
-                              ],
-                            ),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  "Invoice No : 564446456",
-                                  style: TextStyle(
-                                      color: Colors.black, fontSize: 10),
-                                ),
-                                Text(
-                                  "29 Dec 2023",
-                                  style: TextStyle(
-                                      color: Colors.black, fontSize: 10),
-                                )
-                              ],
-                            ),
-                          ],
-                        ),
-                        leading: CircleAvatar(
-                          backgroundImage: NetworkImage(
-                              'https://content.jdmagicbox.com/comp/mumbai/d9/022pxx22.xx22.180209190346.l6d9/catalogue/dessi-cuppa-borivali-east-mumbai-inexpensive-restaurants-below-rs-500--pyz3q.jpg'),
-                        ),
-                        trailing: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            Icon(
-                              Icons.check_circle_outline_rounded,
-                              color: Colors.green,
-                            ),
-                            Text("Approved",
-                                style: TextStyle(
-                                    color: Colors.green, fontSize: 10))
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding:
-                        const EdgeInsets.only(left: 10, right: 10, top: 10),
-                    child: Container(
-                      height: 80,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
-                          color: Colors.white),
-                      child: ListTile(
-                        title: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  "Zudio Kakkanad",
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                                Text(
-                                  "690",
-                                  style: TextStyle(
-                                      color: Colors.indigo,
-                                      fontWeight: FontWeight.bold),
-                                )
-                              ],
-                            ),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  "Invoice No : 564446456",
-                                  style: TextStyle(
-                                      color: Colors.black, fontSize: 10),
-                                ),
-                                Text(
-                                  "29 Dec 2023",
-                                  style: TextStyle(
-                                      color: Colors.black, fontSize: 10),
-                                )
-                              ],
-                            ),
-                          ],
-                        ),
-                        leading: CircleAvatar(
-                          backgroundImage: NetworkImage(
-                              'https://www.mallsmarket.com/sites/default/files/styles/medium/public/images/brands/zudio-logo.jpg'),
-                        ),
-                        trailing: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            Icon(
-                              Icons.access_time_rounded,
-                              color: Colors.orange,
-                            ),
-                            Text("Pending",
-                                style: TextStyle(
-                                    color: Colors.orange, fontSize: 10))
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding:
-                        const EdgeInsets.only(left: 10, right: 10, top: 10),
-                    child: Container(
-                      height: 80,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
-                          color: Colors.white),
-                      child: ListTile(
-                        title: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  "Ayur Pharma Kochi",
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                                Text(
-                                  "320",
-                                  style: TextStyle(
-                                      color: Colors.indigo,
-                                      fontWeight: FontWeight.bold),
-                                )
-                              ],
-                            ),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  "Invoice No : 564446456",
-                                  style: TextStyle(
-                                      color: Colors.black, fontSize: 10),
-                                ),
-                                Text(
-                                  "29 Dec 2023",
-                                  style: TextStyle(
-                                      color: Colors.black, fontSize: 10),
-                                )
-                              ],
-                            ),
-                          ],
-                        ),
-                        leading: CircleAvatar(
-                          backgroundImage: NetworkImage(
-                              'https://c8.alamy.com/comp/2AH30A2/green-herbal-logo-2AH30A2.jpg'),
-                        ),
-                        trailing: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            Icon(
-                              Icons.not_interested_outlined,
-                              color: Colors.red,
-                            ),
-                            Text("Rejected",
-                                style:
-                                    TextStyle(color: Colors.red, fontSize: 10))
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding:
-                        const EdgeInsets.only(left: 10, right: 10, top: 10),
-                    child: Container(
-                      height: 80,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
-                          color: Colors.white),
-                      child: ListTile(
-                        title: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  "Nike Idappally",
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                                Text(
-                                  "2300",
-                                  style: TextStyle(
-                                      color: Colors.indigo,
-                                      fontWeight: FontWeight.bold),
-                                )
-                              ],
-                            ),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  "Invoice No : 564446456",
-                                  style: TextStyle(
-                                      color: Colors.black, fontSize: 10),
-                                ),
-                                Text(
-                                  "29 Dec 2023",
-                                  style: TextStyle(
-                                      color: Colors.black, fontSize: 10),
-                                )
-                              ],
-                            ),
-                          ],
-                        ),
-                        leading: CircleAvatar(
-                          backgroundImage: NetworkImage(
-                              'https://free4kwallpapers.com/uploads/originals/2015/07/14/nike-logo-png.jpg'),
-                        ),
-                        trailing: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            Icon(
-                              Icons.check_circle_outline_rounded,
-                              color: Colors.green,
-                            ),
-                            Text("Approved",
-                                style: TextStyle(
-                                    color: Colors.green, fontSize: 10))
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             )
           ],

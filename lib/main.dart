@@ -28,10 +28,10 @@ class First extends StatelessWidget {
        child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(right: 360, top: 30),
+              padding: const EdgeInsets.only(right: 330, top: 30),
               child: Row(
                 children: [
-                  SizedBox(width: 10,),
+                  SizedBox(width: 5,),
                   Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(7),
@@ -115,7 +115,7 @@ class First extends StatelessWidget {
                         color: Colors.blue,
                       ),
                       height: 60,
-                      width: 180,
+                      width: 160,
                       child: TextButton(
                           onPressed: () {
                             Navigator.push(

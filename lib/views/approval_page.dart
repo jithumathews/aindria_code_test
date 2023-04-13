@@ -2,15 +2,9 @@ import 'package:aindria_code_test/main.dart';
 import 'package:aindria_code_test/views/new_invoice.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:linear_progress_bar/linear_progress_bar.dart';
+
 
 import 'notifications.dart';
-
-void main() {
-  runApp(MaterialApp(
-    home: Approval_page(),
-  ));
-}
 
 class Approval_page extends StatelessWidget {
   const Approval_page({Key? key}) : super(key: key);
@@ -221,7 +215,7 @@ class Approval_page extends StatelessWidget {
               ),
               SizedBox(height: 20,),
               Container(
-                height: MediaQuery.of(context).size.height * .44,
+                height: MediaQuery.of(context).size.height * .42,
                 width: MediaQuery.of(context).size.width * .95,
                 color: Colors.black,
                 child: Image(image: NetworkImage("https://www.vc-erp.com/wp-content/uploads/2021/03/GST-E-Invoice-screenshot.jpg")),
